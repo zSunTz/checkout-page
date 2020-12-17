@@ -1,0 +1,62 @@
+@media (max-width: 739px) {
+    .header {
+        margin-top: 32px;
+    }
+    .recipe-name {
+        font-size: 24px;
+    }
+    .recipe-intro {
+        font-size: 12px;
+    }
+    .recipe-info {
+        flex-direction: column-reverse;
+    }
+    .recipe-info__statistics {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .statistic__item {
+        margin: 21px 10px 0; 
+    }
+    .statistic__item i {
+        font-size: 17px;
+    }
+    .statistic__label {
+        font-size: 8px;
+        margin-bottom: 0;
+    }
+    .statistic__name {
+        font-size: 10px;
+    }
+    .statistic__number {
+        font-size: 10px;
+    }
+    .yeilds {
+        margin-right: 233px;
+    }
+    .recipe-info__item-heading {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .ingredient__item-heading {
+        font-size: 16px;
+        margin: 13px 0 24px;
+    }
+    .ingerdient__step {
+        margin-bottom: 3px;
+    }
+    .ingerdient__step span {
+        font-size: 14px;
+    }
+    .instruction__item span {
+        width: 274px;
+        line-height: 24px;
+    }
+    .source {
+        font-size: 14px;
+        margin-top: 26px;
+    }
+}

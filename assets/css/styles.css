@@ -1,193 +1,228 @@
-/* 
-    font-family: 'Playfair Display', serif;
-    font-family: 'Montserrat', sans-serif;
-*/
-
-:root {
-    --text-color: #333;
-}
-
 * {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
-    line-height: 1.6rem;
+    height: 100vh;
+    box-sizing: inherit;
     font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 62.5%;
+    font-weight: 600;
 }
 
-ul {
-    padding-left: 0;
-    list-style: none;
+.page-container {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
-.container {
-    max-width: 970px!important;
+.page-heading {
+    font-size: 3.6rem;
+    color: #4E5150;
 }
 
-/* Header */
-.header {
-    margin-top: 52px;
-}
-
-.recipe-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    color: #000;
-}
-
-.recipe-intro {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: italic;
-    color: #4F4F4F;
-    max-width: 585px;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.recipe-intro-icon {
-    margin-top: 6px;
-    margin-right: 12px;
-}
-
-.recipe-intro i {
-    display: block;
-    color: #4F4F4F;
-    line-height: 5px;
-}
-
-.recipe-img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-/* recipe info */
-.recipe-info__item-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-/* ingredient */
-.ingredient__item-heading {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 18px;
-    color: var(--text-color);
-    margin: 32px 0;
-}
-
-.ingerdient__step {
-    max-width: 600px;
-    margin-bottom: 14px;
-    display: flex;
-}
-
-.ingerdient__step input {
-    transform: scale(1.3);
-    margin-right: 16px;
-}
-
-.ingerdient__step span {
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    color: var(--text-color);
-}
-
-/* instructions */
-.instruction__item {
-    display: flex;
-    margin-top: 28px;
-}
-
-.instruction__item-number-order {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 32px;
-    min-width: 36px;
-    height: 36px;
-    background-color: orange;
-    text-align: center;
-    margin-right: 15px;
-}
-
-.instruction__item span {
-    display: block;
-    max-width: 528px;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-/* Statistic */
-.recipe-info__statistics {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    max-width: 100%;
-    max-height: 367px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.statistic__item {
-    margin-left: 42px;
+.main {
     margin-top: 50px;
+}
+
+/* form layout */
+.form-wrap {
+    margin-bottom: 50px;
+}
+
+.checkbox-wrap {
     display: flex;
     align-items: center;
 }
 
-.statistic__item i { 
-    margin-right: 14px;
-    font-size: 28px;
-    color: var(--text-color);
+.form-info {
+    font-size: 1.8rem;
 }
 
-.statistic__label {
+.form-group {
+    margin-top: 15px;
+}
+
+.form-label {
     display: block;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 12px;
-    color: #BDBDBD;
-    margin-bottom: 4px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #4F4F4F;
 }
 
-.statistic__number {
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 14px;
-    color: var(--text-color);
+.checkbox-label {
+    font-size: 1.6rem;
+    padding-left: 10px;
 }
 
-.yeilds i {
-    color: orange;
+.form-input-wrap {
+    height: 56px;
+    max-width: 100%;
+    margin-top: 7px;
+    padding: 0 15px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+
 }
 
-.yeilds .statistic__number {
-    color: orange;
+.form-icon {
+    font-size: 20px;
+    color: #828282;
+    margin-right: 18px;
 }
 
-/* source */
-.source {
-    font-size: 16px;
-    font-style: italic;
-    line-height: 24px;
-    color: #BDBDBD;
-    margin-top: 60px;
+input[type="checkbox"] {
+    width: 21px;
+    height: 21px;
 }
 
-/* footer */
-.footer {
-    font-size: 14px;
+input[type="text"], select{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
     font-weight: 600;
+    color: #929292;
+}
+
+.form-submit-btn {
+    width: 166px;
+    height: 54px;
+    background-color: #F2994A;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-top: 24px;
+    float: right;
+}
+
+.message {
+    display: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: red;
+    font-style: italic;
+    margin: 5px 10px;
+}
+
+.form-group.invalid >
+.form-input-wrap {
+    border: 1px solid red;
+}
+
+.form-group.invalid > .message {
+    display: block;
+}
+
+/* Bill info */
+.bill-info {
+    width: 383px;
+    height: 535px;
+    background-color: #F2F2F2;
+    border-radius: 12px; 
+    padding: 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list {
+    flex: 1;
+}
+
+.product-wrap {
+    margin-top: 30px;
+    display: flex;
+}
+
+.prodcut-img {
+    width: 135px;
+    border-radius: 12px;
+}
+
+.product-info-wrap {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    flex: 1;
+}
+
+.sale-off-price {
+    font-size: 1.6rem;
+    color: #F2994A;
+}
+
+.current-price {
+    font-size: 1.2rem;
+    color: #4E5150;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.product-quantity-box {
+    width: 135px;
+    height: 52px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.qtn-btn {
+    width: 25px;
+    height: 20px;
+    font-size: 1.6rem;
+    background-color: #E0E0E0;
+    border: none;
+}
+
+.product-quantity {
+    font-size: 1.6rem;
+}
+
+.cost-group {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+
+.cost-group::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color:#BDBDBD;
+}
+
+.cost-name {
+    font-size: 1.8rem;
+    flex: 1;
+}
+
+.cost-value {
+    font-size: 1.4rem;
+}
+
+/* Footer */
+.footer {
+    font-size: 1.4rem;
     color: #A9A9A9;
+    margin-top: 185px;
     text-align: center;
-    margin: 100px 0 17px 0;
 }
